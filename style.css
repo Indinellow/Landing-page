@@ -1,7 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap:16px;
+    margin: 0;
 }
 
 .header{
@@ -12,9 +13,18 @@ body{
     padding:16px;
     flex: 1 1 auto;
 }
-.logo{
+.logoimg{
     width: 50px;
     height:auto;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: bold;
+    gap:8px;
 }
 
 .upperheader{
@@ -27,7 +37,10 @@ body{
     list-style-type: none;
     gap: 16px;
 }
-
+a {
+color: #e5e7eb;
+text-decoration: none;
+}
 .maintext{
     font-size: 48px;
     font-weight:bolder;
@@ -38,6 +51,25 @@ body{
     font-size: 18px;
     color: #e5e7eb;
 }
+
+.actionbutton,
+.headerbutton{
+    width: max-content;
+    height: max-content;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background: #3882f6;
+    color:white;
+    font-weight: bold;
+}
+.headerbutton{
+    border: none;
+}
+
+.actionbutton{
+    border-color: white;
+}
+
 .lowerheader{
     display: flex;
     justify-content: space-around;
@@ -47,6 +79,7 @@ body{
 .leftheader{
     display:flex;
     flex-direction: column;
+    max-width: 400px;
     flex-grow: 0;
 }
 
@@ -55,19 +88,87 @@ body{
     height: auto;
 }
 
+.informacijetext{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+}
 .ikonice{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap:32px;
+    margin: 32px;
 }
 
 .slikice{
     width: 150px;
+    height: auto;
+    border-radius: 8px;
+    background: rgb(114, 189, 207);
+    padding: 5px;
+    width:150px;
     height: auto;
 }
 .slikice-container{
     display: flex;
     flex-direction: column;
     max-width: 200px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    padding: 64px;
+    gap:8px;    
+}
+
+.quotetext{
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoteauthor{
+    font-size: small;
+    text-align: end;
+    font-weight: bold;
+
+}
+
+.action{
+    display: flex;
+    background-color: #3882f6;
+    padding:32px;
+    border-radius: 10px;
+    gap: 32px;
+    margin: 64px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;  
+    font-size: 18px;
+    color: #e5e7eb;
+    margin:0;
+    flex: 1 1 100%;
+    padding: 32px;
+}
+
+.actionbigtext{
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actionsmalltext{
+    color: white;
+    font-size: 18px;
 }
